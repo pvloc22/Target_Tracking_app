@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:to_do_list/constant.dart';
-import 'package:to_do_list/model/task_model.dart';
+
+import '../data/model/task_model.dart';
 
 class ItemTaskToDo extends StatelessWidget {
   const ItemTaskToDo({super.key, required this.task});

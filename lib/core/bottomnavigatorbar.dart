@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:to_do_list/screens/home_screen.dart';
-
 import '../constant.dart';
-import '../screens/all_tasks_screen.dart';
-import '../screens/calendar_screen.dart';
+import '../views/all_tasks_screen.dart';
+import '../views/calendar_screen.dart';
+import '../views/home_screen.dart';
+
 
 class BottomNavigatorBarTodolist extends StatefulWidget{
   final int initIndex;

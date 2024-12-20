@@ -1,6 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_calendar_week/flutter_calendar_week.dart';
 import 'package:intl/intl.dart';
-import 'package:to_do_list/index.dart';
+
+import '../../constant.dart';
+import '../home/home_bloc.dart';
+import '../home/home_event.dart';
 
 class CalendarWeeks extends StatefulWidget {
   const CalendarWeeks({super.key});
@@ -14,7 +19,7 @@ class _CalendarWeeksState extends State<CalendarWeeks> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
+        margin: const EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
         decoration: BoxDecoration(
           color: kTextWhiteColor,
           borderRadius: BorderRadius.circular(10),

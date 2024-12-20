@@ -1,4 +1,10 @@
-import 'package:to_do_list/index.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../constant.dart';
+import '../home/home_bloc.dart';
+import '../home/home_event.dart';
+import '../search_task_screen.dart';
 
 class SearchBarComponent extends StatelessWidget {
   final TextEditingController controller;

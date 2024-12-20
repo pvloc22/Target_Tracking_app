@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:to_do_list/model/task_model.dart';
 
 import '../constant.dart';
-import '../screens/add_task_screen.dart';
+import '../data/model/task_model.dart';
+import '../views/add_task_screen.dart';
 
 class AppbarHomeSearchAllAddTask extends StatelessWidget
     implements PreferredSizeWidget {

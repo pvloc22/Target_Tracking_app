@@ -1,7 +1,14 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:to_do_list/index.dart';
-import 'package:to_do_list/screens/all_tasks_screen.dart';
-import 'package:to_do_list/screens/calendar_screen.dart';
+import 'package:to_do_list/views/all_tasks_screen.dart';
+import 'package:to_do_list/views/begin_screen.dart';
+import 'package:to_do_list/views/calendar_screen.dart';
+import 'package:to_do_list/views/home/home_bloc.dart';
+import 'package:to_do_list/views/home_screen.dart';
+
+import 'constant.dart';
 
 void main() async {
   // Đảm bảo rằng tất cả dữ liệu đã được tạo hết

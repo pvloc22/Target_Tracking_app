@@ -1,7 +1,18 @@
-import 'package:to_do_list/screens/all_tasks_screen.dart';
-import 'package:to_do_list/screens/calendar_screen.dart';
 
-import '../index.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../constant.dart';
+
+import '../core/enums.dart';
+import 'all_tasks_screen.dart';
+import 'calendar_screen.dart';
+import 'components/item_task.dart';
+import 'components/search_bar.dart';
+import 'home/home_bloc.dart';
+import 'home/home_event.dart';
+import 'home/home_state.dart';
+import 'home_screen.dart';
 
 class SearchTaskScreen extends StatefulWidget {
   const SearchTaskScreen(
@@ -66,7 +77,6 @@ class _SearchTaskScreenState extends State<SearchTaskScreen> {
             height: kDefaultPadding / 2,
           ),
           BlocBuilder<HomeBloc, HomeState>(builder: (context, state) {
-            print('okSearch');
             switch (state.postStatus) {
               case PostStatus.loading:
                 return const Center(child: CircularProgressIndicator());

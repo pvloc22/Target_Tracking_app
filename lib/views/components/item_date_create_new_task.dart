@@ -1,4 +1,8 @@
-import 'package:to_do_list/index.dart';
+import 'package:flutter/material.dart';
+import 'package:to_do_list/data/model/task_model.dart';
+
+import '../../constant.dart';
+import '../add_task_screen.dart';
 
 class ItemDateCreateNewTask extends StatelessWidget {
   final String date;

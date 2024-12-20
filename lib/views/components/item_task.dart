@@ -1,5 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:to_do_list/index.dart';
+
+import '../../constant.dart';
+import '../../data/model/task_model.dart';
+import '../add_task_screen.dart';
+import '../home/home_bloc.dart';
+import '../home/home_event.dart';
+import '../home/home_state.dart';
 
 class ItemTask extends StatefulWidget {
   const ItemTask({super.key, required this.task});

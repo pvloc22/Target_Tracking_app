@@ -1,7 +1,14 @@
 import 'dart:async';
 
-import 'package:to_do_list/index.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_material_color_picker/flutter_material_color_picker.dart';
 import 'package:intl/intl.dart';
+
+import '../constant.dart';
+import '../data/model/task_model.dart';
+import 'home/home_bloc.dart';
+import 'home/home_event.dart';
 
 class AddTaskScreen extends StatefulWidget {
   late bool isAction;
@@ -121,7 +128,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                 : isDetailsTask
                     ? "Detail Task"
                     : "Edit Task",
-            style: const TextStyle(
+            style: TextStyle(
                 fontWeight: FontWeight.w900, fontFamily: kDefaultFontFamily),
           )),
           elevation: 2.0,

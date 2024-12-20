@@ -1,5 +1,7 @@
 import 'package:to_do_list/data/data_provider/data_provider.dart';
-import 'package:to_do_list/index.dart';
+
+import '../../views/home/home_event.dart';
+import '../model/task_model.dart';
 
 class Repository{
   final DataProvider dataProvider;

@@ -1,11 +1,12 @@
 
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-import 'package:to_do_list/model/task_model.dart';
+
+import '../../data/model/task_model.dart';
 
 @immutable
 abstract class HomeEvent  {
-  HomeEvent();
+  const HomeEvent();
 }
 
 

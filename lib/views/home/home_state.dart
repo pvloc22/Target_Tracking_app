@@ -1,6 +1,7 @@
 import 'package:equatable/equatable.dart';
-import 'package:to_do_list/model/task_model.dart';
-import 'package:to_do_list/utils/enums.dart';
+
+import '../../core/enums.dart';
+import '../../data/model/task_model.dart';
 
 class HomeState extends Equatable {
   final PostStatus postStatus;
