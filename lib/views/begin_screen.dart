@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../constant.dart';
+import '../core/local_storage/service_preferences.dart';
 import 'home_screen.dart';
 
 class BeginScreen extends StatelessWidget {
@@ -41,8 +42,10 @@ class BeginScreen extends StatelessWidget {
               height: MediaQuery.sizeOf(context).height * 0.06,
               child: ElevatedButton(
                   onPressed: () async {
-                    final pres = await SharedPreferences.getInstance();
-                    pres.setBool("onboarding", true);
+                    /// Save value onboarding in share preferences.
+                    servicePreferences.setOnboarding();
+
+                    /// Navigate to home page.
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(

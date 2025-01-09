@@ -9,13 +9,13 @@ import 'package:to_do_list/views/home/home_bloc.dart';
 import 'package:to_do_list/views/home_screen.dart';
 
 import 'constant.dart';
+import 'core/local_storage/service_preferences.dart';
 
 void main() async {
   // Đảm bảo rằng tất cả dữ liệu đã được tạo hết
   WidgetsFlutterBinding.ensureInitialized();
   // Tạo biến với mục tiêu kiểm tra ứng đụng đã đăng nhập lần đầu chưa
-  final prefs = await SharedPreferences.getInstance();
-  final onboarding = prefs.getBool("onboarding") ?? false;
+  final onboarding = await servicePreferences.isOnboarding();
   // Build app
   runApp(MyApp(
     onboarding: onboarding,
